@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Красивый слайдер</title>
+</head>
+<body class="flex-col items-center w-full h-full bg-main bg-cover bg-no-repeat bg-center">
+    <header class="flex py-12 px-14 lg:pl-14 lg:pr-24 mb-7 items-center justify-between">
+        <ul class="hidden lg:flex gap-10">
+            <li class="font-outfit font-medium text-xl text-white">Movies</li>
+            <li class="font-outfit font-medium text-xl text-white">TV Shows</li>
+            <li class="font-outfit font-medium text-xl text-white">Documentaries</li>
+        </ul>
+        <img src="img/ApnaTV.svg" alt="logo">
+        <ul class="hidden lg:flex items-center gap-10">
+            <li>
+                <img src="img/search.svg" alt="search">
+            </li>
+            <li>
+                <img src="img/bell.svg" alt="search">
+            </li>
+            <li class="font-outfit font-semibold text-xl text-white">Sign Up</li>
+        </ul>
+        <div class="lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-10 h-10">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+        </div>
+    </header>
+    <main class="flex-col lg:flex lg:flex-row px-12 lg:pl-20 lg:pr-24 pb-20">
+        <div class="flex-col w-full lg:w-2/5 mr-5">
+            <h1 class="mb-2 font-oswald font-bold text-white text-7xl uppercase">STAR WARS</h1>
+            <h2 class="font-oswald font-bold text-white text-4xl uppercase">THE RISE OF SKYWALKER</h2>
+            <p class="mt-4 mb-6 font-outfit font-medium text-white text-xl"> 
+                The surviving members of the resistance face the First Order once again, 
+                and the legendary conflict between the Jedi and the Sith reaches its peak bringing the Skywalker saga to its end.
+            </p>
+            <img class="h-6 w-40" src="img/rating.png" alt="rating">
+            <div class="mt-10 flex gap-6 h-14 items-center">
+                <button class="h-14 w-48 flex items-center justify-center gap-3 font-outfit font-semibold text-white text-xl bg-fill-btn border-none rounded-full">
+                    <img src="img/play.svg" alt="play">
+                    Watch Now
+                </button>
+                <button class="py-3 w-32 flex items-center justify-center px-8 h-12 font-outfit font-semibold text-white text-xl border rounded-full">Trailer</button>
+            </div>
+        </div>
+        <div class="mt-10 lg:ml-14 lg:mt-0 w-full lg:w-3/5 relative flex-col">
+            <div class="hidden lg:flex gap-5 absolute top-0 right-0">
+                <button><img src="img/left_arrow.svg" alt="left_arrow"></button>
+                <button><img src="img/right_arrow.svg" alt="right_arrow"></button>
+            </div>
+            <div class="lg:mt-16 flex items-center justify-center gap-4 overflow-hidden">
+                <img class="h-80" src="img/capitan_america.png" alt="capitan_america">
+                <img class="h-80" src="img/star_wars.png" alt="star_wars">
+                <img class="h-80" src="img/spider_man.png" alt="spider_man">
+                <img class="h-80" src="img/avengers.png" alt="avengers">
+                <img class="h-80" src="img/uncharted.png" alt="uncharted">
+                <img class="h-80" src="img/star_wars2.png" alt="star_wars2">
+            </div>
+        </div>
+    </main>
+</body>
+</html>
