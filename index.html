@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
     <title>Красивый слайдер</title>
 </head>
 <body class="flex-col items-center w-full h-full bg-main bg-cover bg-no-repeat bg-center">
     <header class="flex py-12 px-14 lg:pl-14 lg:pr-24 mb-7 items-center justify-between">
         <ul class="hidden lg:flex gap-10">
-            <li class="font-outfit font-medium text-xl text-white">Movies</li>
-            <li class="font-outfit font-medium text-xl text-white">TV Shows</li>
-            <li class="font-outfit font-medium text-xl text-white">Documentaries</li>
+            <a href="#"><li class="header-text">Movies</li></a>
+            <a href="#"><li class="header-text">TV Shows</li></a>
+            <a href="#"><li class="header-text">Documentaries</li></a>
         </ul>
         <img src="img/ApnaTV.svg" alt="logo">
         <ul class="hidden lg:flex items-center gap-10">
-            <li>
+            <li class="cursor-pointer">
                 <img src="img/search.svg" alt="search">
             </li>
-            <li>
+            <li class="cursor-pointer">
                 <img src="img/bell.svg" alt="search">
             </li>
-            <li class="font-outfit font-semibold text-xl text-white">Sign Up</li>
+            <a href="#"><li class="font-outfit font-semibold text-xl text-white">Sign Up</li></a>
         </ul>
         <div class="lg:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="w-10 h-10">
@@ -38,8 +40,24 @@
                 The surviving members of the resistance face the First Order once again, 
                 and the legendary conflict between the Jedi and the Sith reaches its peak bringing the Skywalker saga to its end.
             </p>
-            <img class="h-6 w-40" src="img/rating.png" alt="rating">
-            <div class="mt-10 flex gap-6 h-14 items-center">
+            <div class="rating h-6 w-40 flex gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="w-6 h-6">
+                    <path id="star-1" d="M8.71763 1.50097C9.4593 0.0441341 11.5406 0.0441349 12.2823 1.50097L13.9948 4.8649C14.2942 5.45294 14.8643 5.85548 15.5187 5.94076L19.2386 6.42558C20.9268 6.64562 21.5856 8.74008 20.3273 9.88697L17.7543 12.2321C17.2412 12.6997 17.0073 13.3999 17.1364 14.082L17.7858 17.5151C18.0946 19.1475 16.3937 20.4229 14.9132 19.6691L11.4074 17.8841C10.8373 17.5938 10.1626 17.5938 9.59248 17.8841L6.08672 19.6691C4.60619 20.4229 2.90528 19.1475 3.2141 17.5151L3.86354 14.082C3.99257 13.3999 3.75868 12.6997 3.24563 12.2321L0.672598 9.88697C-0.58574 8.74008 0.0730574 6.64562 1.76135 6.42558L5.48123 5.94076C6.13556 5.85548 6.70571 5.45294 7.00508 4.8649L8.71763 1.50097Z" fill="#FFC700"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="w-6 h-6">
+                    <path id="star-2" d="M8.71763 1.50097C9.4593 0.0441341 11.5406 0.0441349 12.2823 1.50097L13.9948 4.8649C14.2942 5.45294 14.8643 5.85548 15.5187 5.94076L19.2386 6.42558C20.9268 6.64562 21.5856 8.74008 20.3273 9.88697L17.7543 12.2321C17.2412 12.6997 17.0073 13.3999 17.1364 14.082L17.7858 17.5151C18.0946 19.1475 16.3937 20.4229 14.9132 19.6691L11.4074 17.8841C10.8373 17.5938 10.1626 17.5938 9.59248 17.8841L6.08672 19.6691C4.60619 20.4229 2.90528 19.1475 3.2141 17.5151L3.86354 14.082C3.99257 13.3999 3.75868 12.6997 3.24563 12.2321L0.672598 9.88697C-0.58574 8.74008 0.0730574 6.64562 1.76135 6.42558L5.48123 5.94076C6.13556 5.85548 6.70571 5.45294 7.00508 4.8649L8.71763 1.50097Z" fill="#FFC700"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="w-6 h-6">
+                    <path id="star-3" d="M8.71763 1.50097C9.4593 0.0441341 11.5406 0.0441349 12.2823 1.50097L13.9948 4.8649C14.2942 5.45294 14.8643 5.85548 15.5187 5.94076L19.2386 6.42558C20.9268 6.64562 21.5856 8.74008 20.3273 9.88697L17.7543 12.2321C17.2412 12.6997 17.0073 13.3999 17.1364 14.082L17.7858 17.5151C18.0946 19.1475 16.3937 20.4229 14.9132 19.6691L11.4074 17.8841C10.8373 17.5938 10.1626 17.5938 9.59248 17.8841L6.08672 19.6691C4.60619 20.4229 2.90528 19.1475 3.2141 17.5151L3.86354 14.082C3.99257 13.3999 3.75868 12.6997 3.24563 12.2321L0.672598 9.88697C-0.58574 8.74008 0.0730574 6.64562 1.76135 6.42558L5.48123 5.94076C6.13556 5.85548 6.70571 5.45294 7.00508 4.8649L8.71763 1.50097Z" fill="#FFC700"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="w-6 h-6">
+                    <path id="star-4" d="M8.71763 1.50097C9.4593 0.0441341 11.5406 0.0441349 12.2823 1.50097L13.9948 4.8649C14.2942 5.45294 14.8643 5.85548 15.5187 5.94076L19.2386 6.42558C20.9268 6.64562 21.5856 8.74008 20.3273 9.88697L17.7543 12.2321C17.2412 12.6997 17.0073 13.3999 17.1364 14.082L17.7858 17.5151C18.0946 19.1475 16.3937 20.4229 14.9132 19.6691L11.4074 17.8841C10.8373 17.5938 10.1626 17.5938 9.59248 17.8841L6.08672 19.6691C4.60619 20.4229 2.90528 19.1475 3.2141 17.5151L3.86354 14.082C3.99257 13.3999 3.75868 12.6997 3.24563 12.2321L0.672598 9.88697C-0.58574 8.74008 0.0730574 6.64562 1.76135 6.42558L5.48123 5.94076C6.13556 5.85548 6.70571 5.45294 7.00508 4.8649L8.71763 1.50097Z" fill="#FFC700"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="w-6 h-6">
+                    <path id="star-5" d="M10.2026 1.84124C10.6661 0.930713 11.967 0.930713 12.4305 1.84124L14.143 5.20516C14.5547 6.01372 15.3386 6.56721 16.2383 6.68447L19.9582 7.16929C21.0134 7.30682 21.4251 8.61586 20.6387 9.33266L18.0657 11.6778C17.3602 12.3208 17.0386 13.2835 17.216 14.2214L17.8655 17.6545C18.0585 18.6747 16.9954 19.4719 16.0701 19.0007L12.5643 17.2157C11.7804 16.8165 10.8527 16.8165 10.0688 17.2157L6.56301 19.0007C5.63767 19.4719 4.57461 18.6747 4.76762 17.6545L5.41705 14.2214C5.59447 13.2835 5.27288 12.3208 4.56743 11.6778L1.9944 9.33266C1.20794 8.61585 1.61969 7.30682 2.67487 7.16929L6.39475 6.68447C7.29445 6.56721 8.07841 6.01372 8.49004 5.20516L10.2026 1.84124Z" stroke="#FFC700" stroke-width="1.5"/>
+                </svg>
+            </div>
+            <div class="mt-10 flex flex-col sm:flex-row gap-6  items-center">
                 <button class="h-14 w-48 flex items-center justify-center gap-3 font-outfit font-semibold text-white text-xl bg-fill-btn border-none rounded-full">
                     <img src="img/play.svg" alt="play">
                     Watch Now
@@ -48,19 +66,35 @@
             </div>
         </div>
         <div class="mt-10 lg:ml-14 lg:mt-0 w-full lg:w-3/5 relative flex-col">
-            <div class="hidden lg:flex gap-5 absolute top-0 right-0">
-                <button><img src="img/left_arrow.svg" alt="left_arrow"></button>
-                <button><img src="img/right_arrow.svg" alt="right_arrow"></button>
+            <div class="hidden lg:flex justify-end gap-5 top-0 right-0">
+                <button class="swiper-prev"><img src="img/left_arrow.svg" alt="left_arrow"></button>
+                <button class="swiper-next"><img src="img/right_arrow.svg" alt="right_arrow"></button>
             </div>
-            <div class="lg:mt-16 flex items-center justify-center gap-4 overflow-hidden">
-                <img class="h-80" src="img/capitan_america.png" alt="capitan_america">
-                <img class="h-80" src="img/star_wars.png" alt="star_wars">
-                <img class="h-80" src="img/spider_man.png" alt="spider_man">
-                <img class="h-80" src="img/avengers.png" alt="avengers">
-                <img class="h-80" src="img/uncharted.png" alt="uncharted">
-                <img class="h-80" src="img/star_wars2.png" alt="star_wars2">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="" src="img/capitan_america.png" alt="capitan_america">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="" src="img/star_wars.png" alt="star_wars">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="" src="img/spider_man.png" alt="spider_man">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="" src="img/avengers.png" alt="avengers">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="" src="img/uncharted.png" alt="uncharted">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="" src="img/star_wars2.png" alt="star_wars2">
+                    </div>
+                </div>
             </div>
         </div>
     </main>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 </html>
