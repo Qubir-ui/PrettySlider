@@ -67,8 +67,18 @@
         </div>
         <div class="mt-10 lg:ml-14 lg:mt-0 w-full lg:w-3/5 relative flex-col">
             <div class="hidden lg:flex justify-end gap-5 top-0 right-0">
-                <button class="swiper-prev"><img src="img/left_arrow.svg" alt="left_arrow"></button>
-                <button class="swiper-next"><img src="img/right_arrow.svg" alt="right_arrow"></button>
+                <button class="swiper-prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="w-10 h-10">
+                        <rect width="40" height="40" rx="5" fill="white"/>
+                        <path d="M25.9259 9L14 20.5L25.9259 32" stroke="black" stroke-opacity="0.7" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <button class="swiper-next">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="w-10 h-10">
+                        <rect x="40" y="40" width="40" height="40" rx="5" transform="rotate(-180 40 40)" fill="white"/>
+                        <path d="M14.0741 32L26 20.5L14.0741 9" stroke="black" stroke-opacity="0.7" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
             </div>
             <div class="swiper">
                 <div class="swiper-wrapper">

@@ -27,11 +27,16 @@ const swiper = new Swiper('.swiper', {
     },
 });
 
+let eventList = ["click", "mouseover"]; 
+
 document.addEventListener("DOMContentLoaded", ()=>{
-    document.querySelector(".swiper-prev").addEventListener("click", ()=>{
-        swiper.slidePrev()
-    })
-    document.querySelector(".swiper-next").addEventListener("click", ()=>{
-        swiper.slideNext()
-    })
+
+    eventList.forEach(function(event) {
+        document.querySelector(".swiper-prev").addEventListener(event, function() {
+            swiper.slidePrev()
+        });
+        document.querySelector(".swiper-next").addEventListener(event, function() {
+            swiper.slideNext()
+        });
+    });
 })

@@ -18,6 +18,13 @@
   border-radius: 1.8rem;
 }
 
+.swiper-prev svg:hover path, .swiper-next svg:hover path{
+  stroke: #FA4776;
+}
+.swiper-prev svg:hover rect, .swiper-next svg:hover rect{
+  fill: #ffffff;
+}
+
 @media (min-width: 1600px){
   .swiper-slide-active img{
     border: 6px solid rgba(250, 71, 118, 0.5);
